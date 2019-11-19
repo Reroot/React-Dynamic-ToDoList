@@ -23,26 +23,14 @@ import "./App.css";
 // const color = {
 // 	color: "green"
 // };
+//let's put this in app.js instead and render from the root from here
 
-function MyApp() {
-	return (
-		<div className="app-bar">
-			<ul>
-				<p>Hi my name is Artem, my favorite vaction spots are...</p>
-				<p>I'm going to be a great painter one day.</p>
-				<li>Kiev</li>
-				<li>Italy</li>
-				<li>Moscow</li>
-			</ul>
-		</div>
-	);
-}
 //now it's more resuable, and we can have it anywhere in the code
 //ReactDOM.render(MyApp(), document.getElementById("root"));
 
 //even better, dom element grab
-ReactDOM.render(<MyApp />, document.getElementById("root"));
-
+ReactDOM.render(<App />, document.getElementById("root"));
+//<App it'selft is a componet that holds componets
 //check it, can't render two html elements together in jsx
 //need to be wrapped/nested wiht divs
 //ReactDOM.render(<h1>"render some text"</h1>, document.getElementById('root'));
